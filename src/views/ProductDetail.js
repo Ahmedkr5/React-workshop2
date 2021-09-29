@@ -11,7 +11,7 @@ export default class ProductDetails extends Component {
     <>
         <button onClick={() => this.props.history.replace("/products")}>Return to products</button>
       <ProductsWrapper>
-        {toRender ? (<Product prod={toRender}></Product>) : (<p>Product not found</p>)}
+        {toRender ? (<Product product={toRender}></Product>) : (<p>Product not found</p>)}
       </ProductsWrapper>
       </>
     );
